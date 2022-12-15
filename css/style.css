@@ -1,1 +1,180 @@
 
+
+/* Text */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Navigation bar */
+
+.customNav {
+    position: fixed;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(23, 22, 22) !important;
+    background-size: cover;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 400px !important;
+}
+
+
+.nav-item {
+    margin: 0px 15px;
+}
+
+
+/* Navigation links */
+.customNav a {
+    color: white !important;
+}
+
+/* Jumbotron  */
+.jumbotron {
+    background-color: rgb(221, 227, 214);
+    padding-top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: " display-10 lead my-4";
+}
+
+.display-10 {
+    grid-area: display-10;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.display-10 img {
+    padding-top: 30px;
+    width: 150px;
+}
+
+.lead {
+    grid-area: lead;
+    display: grid;
+    justify-items: center;
+}
+
+.lead hr {
+    width: 50%;
+}
+
+.my-4 {
+    grid-area: my-4;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: rgb(4, 4, 4);
+    border-color: black;
+}
+
+.jumbotron h1 {
+    padding-top: 20px;
+}
+
+/* Jumbotron copy */
+.jumboCopy {
+    width: 70%;
+    min-width: 500px;
+    max-width: 700px;
+    color: black;
+    text-align: center
+}
+
+/* Cards */
+
+.main {
+    grid-area:container;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 10% 55% 10% 10%;
+    grid-template-areas: " aboutus who"
+        "portfolio container-fluid"
+        "skillset how"
+        "contactus where"
+    ;
+       row-gap: 50px;
+}
+
+.aboutus {
+    grid-area: aboutus;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  
+  }
+
+  .who {
+    grid-area: who;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    }
+
+    .portfolio {
+        grid-area: portfolio;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+
+.container-fluid {
+    grid-area: container-fluid;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "card1 card1"
+        "card2 card3"
+        "card4 card5";
+
+}
+
+.card1 {
+    grid-area: card1;
+    display: grid;
+    justify-content: center;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+.card2{}
+.card3{}
+.card4{}
+.card5{}
+
+.skillset {
+    grid-area: skillset;
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    margin-top: 20px;
+    }
+
+    .contactus {
+        grid-area: contactus;
+        display: grid;
+        justify-content: center;
+        align-items: flex-start;
+      
+      }
+
